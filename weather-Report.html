@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-container">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success bg-container">
         <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_oDU4qf1uubLcJsNWT9Rp-8p6vxGZW9CR3g&usqp=CAU" height="40" width="30"><span class="main-heading">WEATHER PREDICTOR</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -54,35 +54,35 @@
             </div>
         </div>
         <div class="main-card shadow">
-            <h1>Bengaluru 24*c</h1>
-            <p>High: 28*c | Low: 25*c</p>
+            <h1 id="heading">Bengaluru</h1><span>24°c</span>
+            <p>High: 28°c | Low: 25°c</p>
             <div class="card">
                 <h1 class="heading card-heading">DAILY FORECAST</h1>
                 <div class=" row d-flex flex-row">
-                    <div class="col-12 col-lg-3 col-xl-2 text-center m-2">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2 text-center m-2">
                         <p class="heading">28/10</p>
-                        <p>Avg: 24*c</p>
-                        <p>High: 28*c | Low: 24*c</p>
+                        <p>Avg: 24°c</p>
+                        <p>High: 28°c | Low: 24°c</p>
                     </div>
-                    <div class="col-12 col-lg-3 col-xl-2 text-center m-2">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2 text-center m-2">
                         <p class="heading">29/10</p>
                         <p>Avg: 24*c</p>
-                        <p>High: 28*c | Low: 25*c</p>
+                        <p>High: 28°c | Low: 25°c</p>
                     </div>
-                    <div class="col-12 col-lg-3 col-xl-2 text-center m-2">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2 text-center m-2">
                         <p class="heading">30/10</p>
-                        <p>Avg: 24*c</p>
-                        <p>High: 28*c | Low: 25*c</p>
+                        <p>Avg: 24°c</p>
+                        <p>High: 28°c | Low: 25°c</p>
                     </div>
-                    <div class="col-12 col-lg-3 col-xl-2 text-center m-2">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2 text-center m-2">
                         <p class="heading">31/10</p>
-                        <p>Avg: 24*c</p>
-                        <p>High: 28*c | Low: 26*c</p>
+                        <p>Avg: 24°c</p>
+                        <p>High: 28°c | Low: 26°c</p>
                     </div>
-                    <div class="col-12 col-lg-3 col-xl-2 text-center m-2">
+                    <div class="col-12 col-md-4 col-lg-3 col-xl-2 text-center m-2">
                         <p class="heading">01/11</p>
-                        <p>Avg: 24*c</p>
-                        <p>High: 28*c | Low: 27*c</p>
+                        <p>Avg: 24°c</p>
+                        <p>High: 28°c | Low: 27°c</p>
                     </div>
                 </div>
             </div>
@@ -93,11 +93,133 @@
             </div>
             <div class="col-12 col-lg-6">
                 <h1>Change the location?</h1>
-                <p>You're are in BANGULURU!</p>
+                <p>You're are in <span id="paragraph">BANGULURU!</span></p>
                 <p>kjnfkwej kfcksdfjca ishdfknasdf khsdfknsdkf ishdfnsadfndfhoewif mc dsnocnds sdfndsf sdfsadnf ksdfo;sdfndsf
                     dbsfkbksdbfkbds osdfsdnf sdfnsd</p>
-                <button class="btn-1">Hourly Forecast</button>
-                <button class=btn-2>Change Location</button>
+                <button type="button" class="btn-1" data-toggle="modal" data-target="#exampleModal">
+                    Hourly Forecast
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-container-1">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel"><i class="bi bi-geo-alt"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                    </svg>
+                                    Banguluru 24°c
+                                </h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>High: 28°c|Low: 24°c</p>
+                                <div class="modal-card-1 mb-3">
+                                    <h1 class="heading-1">Hourly Forecast</h1>
+                                    <div class="row d-flex flex-row">
+                                        <div class="col-3 col-md-2 m-2">
+                                            <h1 class="sub-heading">Now</h1>
+                                            <p class="para">24°c</p>
+                                        </div>
+                                        <div class="col-3 col-md-2 m-2">
+                                            <h1 class="sub-heading">10:30</h1>
+                                            <p class="para">24°c</p>
+                                        </div>
+                                        <div class="col-3 col-md-2 m-2">
+                                            <h1 class="sub-heading">11:30</h1>
+                                            <p class="para">25°c</p>
+                                        </div>
+                                        <div class="col-3 col-md-2 m-2">
+                                            <h1 class="sub-heading">12:30</h1>
+                                            <p class="para">25°c</p>
+                                        </div>
+                                        <div class=" col-3 col-md-2 m-2">
+                                            <h1 class="sub-heading">13:30</h1>
+                                            <p class="para">26°c</p>
+                                        </div>
+                                        <div class="col-3 col-md-2 m-2">
+                                            <h1 class="sub-heading">14:30</h1>
+                                            <p class="para">27°c</p>
+                                        </div>
+                                        <div class="col-3 col-md-2 m-2">
+                                            <h1 class="sub-heading">15:30</h1>
+                                            <p class="para">26°c</p>
+                                        </div>
+                                        <div class="col-3 col-md-2 m-2">
+                                            <h1 class="sub-heading">16:30</h1>
+                                            <p class="para">26°c</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-card-1 mb-3">
+                                    <h1 class="heading-1">DETAILS</h1>
+                                    <div class="d-flex flex-row">
+                                        <div class="m-2">
+                                            <h1 class="sub-heading">Precipitation</h1>
+                                            <p class="para">0.0mm</p>
+                                        </div>
+                                        <div class="m-2">
+                                            <h1 class="sub-heading">East Wind</h1>
+                                            <p class="para">11.0 km/h</p>
+                                        </div>
+                                        <div class="m-2">
+                                            <h1 class="sub-heading">HUM</h1>
+                                            <p class="para">60.0%</p>
+                                        </div>
+                                        <div class="m-2">
+                                            <h1 class="sub-heading">Visibility</h1>
+                                            <p class="para">14.48 km</p>
+                                        </div>
+                                        <div class="m-2">
+                                            <h1 class="sub-heading">UV</h1>
+                                            <p class="para">Moderate</p>
+                                        </div>
+                                        <div class="m-2">
+                                            <h1 class="sub-heading">Pressure</h1>
+                                            <p class="para">1013 hPa</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-primary btn-2" data-toggle="modal" data-target="#exampleModal">
+                    Change Location
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content bg-container">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Change the location</h5>
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Please select the location for which you have to check weather conditions !</p>
+                                <div class="mb-3">
+                                    <label for="status">Destination*</label>
+                                    <select id="status" class="form-control">
+                                        <option value="Banguluru">Banguluru,Karnataka,India</option>
+                                        <option value="Hyderabad">Hyderabad,Telangana,India</option>
+                                        <option value="Mumbai">Mumbai,Maharasthra,India</option>
+                                        <option value="Lucknow">Lucknow,Uttar Pradesh,India</option>
+                                        <option value="Pune">Pune,Maharashtra,India</option>
+                                    </select>
+                                </div>
+                                <button class="change-btn">Change</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

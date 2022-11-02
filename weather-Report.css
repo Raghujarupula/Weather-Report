@@ -78,3 +78,45 @@
     height: 200px;
     width: 250px;
 }
+
+.change-btn {
+    border-radius: 5px;
+    background-color: #f56d58;
+    border-width: 0px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.bg-container {
+    background-color: #c8f0fa;
+}
+
+.bg-container-1 {
+    background-color: #c8f0fa;
+    background-size: cover;
+}
+
+.modal-card-1 {
+    background-color: #08ecfc;
+    background-size: cover;
+    border-radius: 5px;
+    border-width: 0px;
+    padding: 10px;
+}
+
+.heading-1 {
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+.sub-heading {
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.para {
+    font-size: 20px;
+}
